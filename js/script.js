@@ -34,7 +34,7 @@ class TechDealsApp {
                 price: 399.99,
                 originalPrice: 449.99,
                 rating: 4.8,
-                imageUrl: 'https://via.placeholder.com/300x200/667eea/ffffff?text=Sony+WH-1000XM5',
+                imageUrl: 'https://m.media-amazon.com/images/I/51FgbLyCYOL._AC_SX679_.jpg',
                 affiliateLink: 'https://amazon.com/dp/B09XS7JWHH?tag=techdeals-20',
                 description: 'Industry-leading noise canceling with Dual Noise Sensor technology',
                 pros: ['Excellent noise cancellation', 'Long battery life', 'Premium build quality'],
