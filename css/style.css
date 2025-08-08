@@ -1,0 +1,238 @@
+/* Custom animations and styles for TechDeals Pro */
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation classes */
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.pulse-hover:hover {
+    animation: pulse 0.3s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+/* Custom gradient backgrounds */
+.gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-secondary {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+/* Product card enhancements */
+.product-card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: hsl(var(--p));
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Rating stars */
+.rating-stars {
+    display: inline-flex;
+    align-items: center;
+}
+
+.star {
+    color: #fbbf24;
+    font-size: 1rem;
+    margin-right: 2px;
+}
+
+.star.empty {
+    color: #d1d5db;
+}
+
+/* Comparison table styling */
+.comparison-table {
+    min-width: 100%;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid hsl(var(--bc) / 0.1);
+}
+
+.comparison-table th {
+    background-color: hsl(var(--b2));
+    font-weight: 600;
+}
+
+.comparison-highlight {
+    background-color: hsl(var(--su) / 0.1);
+    font-weight: 600;
+}
+
+/* Blog post cards */
+.blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter section */
+.newsletter-bg {
+    background: linear-gradient(135deg, hsl(var(--p)) 0%, hsl(var(--s)) 100%);
+}
+
+/* Social media buttons */
+.social-btn {
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Toast notifications */
+.toast {
+    z-index: 9999;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .footer,
+    .modal,
+    .toast {
+        display: none !important;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .card {
+        break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Accessibility improvements */
+.btn:focus,
+.input:focus,
+.link:focus {
+    outline: 2px solid hsl(var(--p));
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .card {
+        border: 2px solid hsl(var(--bc));
+    }
+    
+    .btn {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(var(--b2));
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--bc) / 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--bc) / 0.5);
+}

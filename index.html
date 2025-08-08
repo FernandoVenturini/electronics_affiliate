@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechDeals Pro - Best Electronics Reviews & Deals</title>
+    <meta name="description" content="Find the best electronics deals, reviews, and comparisons. Amazon Associates and ClickBank affiliate products.">
+    
+    <!-- DaisyUI and Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-base-100">
+    <!-- Header -->
+    <header class="navbar bg-primary text-primary-content sticky top-0 z-50 shadow-lg">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#comparison">Compare</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl font-bold">
+                <i class="fas fa-bolt text-accent"></i>
+                TechDeals Pro
+            </a>
+        </div>
+        
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#home" class="hover:text-accent">Home</a></li>
+                <li><a href="#reviews" class="hover:text-accent">Reviews</a></li>
+                <li><a href="#comparison" class="hover:text-accent">Compare</a></li>
+                <li><a href="#blog" class="hover:text-accent">Blog</a></li>
+                <li><a href="#deals" class="hover:text-accent">Deals</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-end">
+            <div class="form-control">
+                <input type="text" placeholder="Search products..." class="input input-bordered input-sm w-24 md:w-auto text-base-content" id="searchInput">
+            </div>
+            <button class="btn btn-ghost btn-circle ml-2">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen bg-gradient-to-r from-primary to-secondary">
+        <div class="hero-content text-center text-primary-content">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Best Electronics Deals</h1>
+                <p class="mb-5">Discover top-rated electronics with honest reviews, detailed comparisons, and exclusive affiliate deals from Amazon and ClickBank.</p>
+                <button class="btn btn-accent btn-lg" onclick="document.getElementById('reviews').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-star mr-2"></i>
+                    View Reviews
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-16 bg-base-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+                    <figure class="px-10 pt-10">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-headphones text-2xl text-primary-content"></i>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h3 class="card-title">Audio Devices</h3>
+                        <p>Headphones, earbuds, speakers</p>
+                    </div>
+                </div>
+                
+                <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+                    <figure class="px-10 pt-10">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-2xl text-secondary-content"></i>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h3 class="card-title">Mobile Tech</h3>
+                        <p>Smartphones, tablets, accessories</p>
+                    </div>
+                </div>
+                
+                <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+                    <figure class="px-10 pt-10">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center">
+                            <i class="fas fa-home text-2xl text-accent-content"></i>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h3 class="card-title">Smart Home</h3>
+                        <p>Automation, lighting, security</p>
+                    </div>
+                </div>
+                
+                <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+                    <figure class="px-10 pt-10">
+                        <div class="w-16 h-16 bg-info rounded-full flex items-center justify-center">
+                            <i class="fas fa-camera text-2xl text-info-content"></i>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h3 class="card-title">Photography</h3>
+                        <p>Cameras, lenses, accessories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Reviews Section -->
+    <section id="reviews" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest Product Reviews</h2>
+            <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+            <div class="text-center mt-12">
+                <button class="btn btn-primary btn-lg" id="loadMoreProducts">
+                    <i class="fas fa-plus mr-2"></i>
+                    Load More Reviews
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="py-16 bg-base-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Product Comparison</h2>
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-semibold">Compare Products</h3>
+                        <button class="btn btn-outline btn-sm" id="clearComparison">
+                            <i class="fas fa-trash mr-2"></i>
+                            Clear All
+                        </button>
+                    </div>
+                    <div id="comparisonTable" class="overflow-x-auto">
+                        <p class="text-center text-gray-500 py-8">Select products from reviews to compare them here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest Tech News & Guides</h2>
+            <div id="blogGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog posts will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-primary text-primary-content">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated with Best Deals</h2>
+            <p class="mb-8 text-lg">Get exclusive electronics deals and reviews delivered to your inbox</p>
+            <div class="max-w-md mx-auto">
+                <div class="join w-full">
+                    <input type="email" placeholder="Enter your email" class="input input-bordered join-item flex-1 text-base-content" id="newsletterEmail">
+                    <button class="btn btn-accent join-item" id="subscribeBtn">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content">
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a class="link link-hover" href="#about">About</a>
+                <a class="link link-hover" href="#contact">Contact</a>
+                <a class="link link-hover" href="#privacy">Privacy Policy</a>
+                <a class="link link-hover" href="#terms">Terms of Service</a>
+            </div>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <a class="btn btn-ghost btn-circle" href="#" id="shareTwitter">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a class="btn btn-ghost btn-circle" href="#" id="shareFacebook">
+                    <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a class="btn btn-ghost btn-circle" href="#" id="shareInstagram">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a class="btn btn-ghost btn-circle" href="#" id="shareYoutube">
+                    <i class="fab fa-youtube text-xl"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <p class="font-bold">TechDeals Pro</p>
+            <p>© 2025 - All rights reserved</p>
+            <p class="text-sm mt-2">
+                <i class="fas fa-info-circle mr-1"></i>
+                As an Amazon Associate and ClickBank affiliate, we earn from qualifying purchases.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Product Detail Modal -->
+    <dialog id="productModal" class="modal">
+        <div class="modal-box w-11/12 max-w-5xl">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <div id="productModalContent">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Success Toast -->
+    <div class="toast toast-top toast-end" id="successToast" style="display: none;">
+        <div class="alert alert-success">
+            <span id="toastMessage">Success!</span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
