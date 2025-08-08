@@ -157,7 +157,7 @@ class TechDealsApp {
                 title: 'Best Wireless Headphones of 2025: Complete Buyer\'s Guide',
                 excerpt: 'Discover the top wireless headphones that offer the perfect balance of sound quality, comfort, and features for every budget.',
                 publishDate: '2025-01-15',
-                imageUrl: 'https://www.youtube.com/watch?v=kbpw0lGDTc0&pp=0gcJCY0JAYcqIYzv',
+                imageUrl: 'https://images.unsplash.com/photo-1598331668826-20cecc596b86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhlYWRmb25lcyUyMHNlbSUyMGZpb3xlbnwwfHwwfHx8MA%3D%3D',
                 category: 'Reviews',
                 readTime: '8 min read'
             },
@@ -166,7 +166,7 @@ class TechDealsApp {
                 title: 'Smart Home Setup Guide: Transform Your Home in 2025',
                 excerpt: 'Learn how to create the perfect smart home ecosystem with the latest devices and automation tips.',
                 publishDate: '2025-01-12',
-                imageUrl: 'https://via.placeholder.com/400x250/f093fb/ffffff?text=Smart+Home',
+                imageUrl: 'https://images.unsplash.com/photo-1556922404-e13d9ff95de8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8U21hcnQlMkJIb21lfGVufDB8fDB8fHww',
                 category: 'Guides',
                 readTime: '12 min read'
             },
@@ -175,7 +175,7 @@ class TechDealsApp {
                 title: 'Photography Gear Essentials: What You Need to Get Started',
                 excerpt: 'From cameras to accessories, here\'s everything you need to begin your photography journey.',
                 publishDate: '2025-01-10',
-                imageUrl: 'https://via.placeholder.com/400x250/f5576c/ffffff?text=Photography+Gear',
+                imageUrl: 'https://plus.unsplash.com/premium_photo-1661605966352-281ef38c55fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UGhvdG9ncmFwaHklMkJHZWFyfGVufDB8fDB8fHww',
                 category: 'Guides',
                 readTime: '10 min read'
             },
@@ -184,7 +184,7 @@ class TechDealsApp {
                 title: 'Amazon vs ClickBank: Which Affiliate Program is Better?',
                 excerpt: 'Compare the pros and cons of the two major affiliate programs for electronics marketers.',
                 publishDate: '2025-01-08',
-                imageUrl: 'https://via.placeholder.com/400x250/764ba2/ffffff?text=Affiliate+Comparison',
+                imageUrl: 'https://images.unsplash.com/photo-1511548774318-563182fe8d03?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QWZmaWxpYXRlJTJCQ29tcGFyaXNvbnxlbnwwfHwwfHx8MA%3D%3D',
                 category: 'Business',
                 readTime: '6 min read'
             },
@@ -193,7 +193,7 @@ class TechDealsApp {
                 title: 'Mobile Photography Tips: Get Pro Results with Your Smartphone',
                 excerpt: 'Master the art of mobile photography with these professional tips and techniques.',
                 publishDate: '2025-01-05',
-                imageUrl: 'https://via.placeholder.com/400x250/667eea/ffffff?text=Mobile+Photography',
+                imageUrl: 'https://plus.unsplash.com/premium_photo-1667055670863-ad8731824dbc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TW9iaWxlJTJCUGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D',
                 category: 'Tips',
                 readTime: '7 min read'
             },
@@ -202,7 +202,7 @@ class TechDealsApp {
                 title: 'Tech Trends 2025: What to Expect This Year',
                 excerpt: 'Explore the biggest technology trends that will shape the electronics industry in 2025.',
                 publishDate: '2025-01-01',
-                imageUrl: 'https://via.placeholder.com/400x250/f093fb/ffffff?text=Tech+Trends+2025',
+                imageUrl: 'https://plus.unsplash.com/premium_photo-1728457448731-abfd10761206?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VGVjaCUyQlRyZW5kcyUyQjIwMjV8ZW58MHx8MHx8fDA%3D',
                 category: 'News',
                 readTime: '9 min read'
             }
